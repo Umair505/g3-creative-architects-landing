@@ -127,6 +127,37 @@ main > section{
     max-width: 425px;
 }
 
+
+/* Some Facts style  */
+.fact-card{
+    height: 240px;
+    width: 240px;
+    box-sizing: border-box;
+    border: 1px solid rgb(255, 144, 14);
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+.fact-number{
+    font-size: 2.2rem;
+    font-weight: 600;
+    margin-top: 8px;
+    margin-bottom: 3px;
+}
+.fact-name{
+    font-size: 1rem;
+    font-weight: 600;
+    color: rgb(114, 114, 114);
+    margin-top: 5px;
+}
+.facts-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+
+}
+
 /* Responsive Media Query */
 @media screen and (max-width: 576px) {
     .navbar,.teams{
