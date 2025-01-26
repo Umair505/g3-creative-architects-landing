@@ -2,6 +2,148 @@
 .work-sans-font {
     font-family: "Work Sans", serif;
     font-optical-sizing: auto;
-    font-weight: 400px;
+    font-weight: 400;
     font-style: normal;
   }
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Shared Style  */
+.bg-light{
+    background: rgba(255, 144, 14, 0.1);
+}
+.display-flex{
+    display: flex;
+}
+/* Dark 02 */
+.text-gray{
+    color: rgb(66, 66, 66);
+}
+/* Dark 03 */
+.text-light-gray{
+    color: rgb(114, 114, 114);
+}
+.section-title{
+    font-weight: 700;
+    font-size: 3.18rem;
+}
+.title{
+    font-weight: 700;
+    font-size: 2.25rem;
+}
+.para{
+    font-size: 0.9rem;
+    color: #727272;
+    margin-bottom: 20px;
+}
+.btn-primary{
+    border-radius: 8px;
+    background: rgb(255, 144, 14);
+    padding: 18px 22px;
+    color: white;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+}
+.btn-hover:hover{
+    background-color: #e75224
+}
+
+main{
+    max-width: 1152px;
+    margin: 0 auto;
+}
+main > section{
+    margin-top: 130px;
+    margin-bottom: 100px;
+    max-width: 1152px;
+}
+.text-orange{
+    color: rgb(255, 144, 14);
+}
+/* Header style  */
+
+
+/* navbar related styles  */
+.navbar{
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.brand{
+    font-weight: 700;
+    font-size: 2.1rem;
+}
+.nav-item{
+    list-style: none;
+    font-size: 1.1rem;
+    margin-right: 30px;
+}
+.nav-link{
+    text-decoration: none;
+    font-weight: 500;
+}
+.navbar,.banner{
+    max-width: 1152px;
+    margin: 0 auto;
+}
+/* Banner Related Styles */
+ .banner-content{
+    max-width: 850px;
+    margin: 0 auto;
+    text-align: center;  
+    margin-bottom: 50px;
+}
+
+
+.banner-img{
+    width: 100%;
+    margin-bottom: 50px;
+}
+/* Team and Feature related style  */
+
+.feature-title{
+    font-size: 2.5rem;
+}
+.quick{
+    font-weight: 500;
+    color: rgb(114, 114, 114);
+}
+
+.teams{
+    margin-top: 50px;
+    align-items: center;
+    gap: 58px;
+}
+.team-img-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 30px;
+}
+.our-features{
+    max-width: 425px;
+}
+
+/* Responsive Media Query */
+@media screen and (max-width: 576px) {
+    .navbar,.teams{
+        flex-direction: column;
+    }
+    .team-img-container{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .our-features{
+        margin-left: 50px;
+    }
+}
+/* Medium Size Device */
+@media screen and (min-width: 576px) and (max-width: 992px) {
+    .teams{
+        flex-direction: column;
+    }
+}
+
+
