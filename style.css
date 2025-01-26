@@ -174,14 +174,73 @@ main > section,footer{
 }
 
 /* Footer */
-
+footer{
+    border-radius: 8px;
+    background: rgb(255, 244, 231);
+    justify-content: center;
+    text-align: center;
+    margin-left: 192px;
+}
 .footer-text{
+    padding: 30px 328px;
+    color: rgb(66, 66, 66);
+    font-size: 1rem;
+    font-weight: 400;
+    max-width: 90%;
+    word-wrap: break-word;
+}
+/* Feature Section 2 */
+#feature-title{
+    border-left: 5px solid rgb(255, 144, 14);
+    height: 84px;
+    padding-left: 18px;
+}
+.feature-card .feature-title{
+    font-weight: 600;
+    font-size: 1rem;
 
 }
+.feature-card{
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+    background: rgb(255, 255, 255);
+    width: 468px;
+    height:136px ;
+    margin-bottom: 16px;
+}
+.features{
+    display: flex;
+    gap: 80px;
+    align-items: center;
+}
+.feature-architect img{
+    width: 100%;
+}
+.btn-year{
+    color: white;
+    background-color: rgb(255, 144, 14);
+    padding: 35px 33px;
+    border-radius: 8px;
+    border: none;
+    margin-left: -60px;
+    margin-top: -100px;
+}
+.btn-title{
+    font-weight: 700;
+    font-size: 3.25rem;
+    text-align: center;
+}
+.btn-sub{
+    font-weight: 500;
+    font-size: 1.25rem;
+    text-align: center;
+}
+
 
 /* Responsive Media Query */
 @media screen and (max-width: 576px) {
-    .navbar,.teams{
+    .navbar,.teams,.features{
         flex-direction: column;
     }
     .team-img-container{
@@ -205,6 +264,31 @@ main > section,footer{
         grid-template-columns: repeat(2,1fr);
         gap: 50px;
     }
+    footer {
+        margin: 20px auto;
+        padding: 20px;
+        background: none;
+        text-align: center;
+    }
+    
+    .footer-text {
+        font-size: 1.2rem;
+        padding: 10px;
+    }
+    .btn-year{
+        margin-left: 10px;
+    }
+    .feature-card{
+        justify-content: center;
+        text-align: center;
+        word-wrap: break-word;
+        
+    }
+    #feature-title{
+        text-align: center;
+    }
+    
+    
 }
 /* Medium Size Device */
 @media screen and (min-width: 576px) and (max-width: 992px) {
@@ -225,6 +309,17 @@ main > section,footer{
     .sponsors-logo{
         grid-template-columns: repeat(3,1fr);
         gap: 50px;
+    }
+    footer {
+        margin: 10px auto;
+        padding: 10px;
+    }
+    
+    .footer-text {
+        font-size: 1rem;
+        padding: 10px;
+        line-height: 1.5;
+              
     }
 }
 
